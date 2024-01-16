@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img
+          class="px-2"
+          src="https://wowjohn.com/wp-content/uploads/2022/05/bmw-logo-png-4-Transparent-Images-1024x1024.png"
+          width="40px"
+          alt=""
+        />
+        <a class="navbar-brand" href="#">BMW</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Modeller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fiyat Listesi</a>
+            </li>
+          </ul>
+          <span class="navbar-text"> Eşsiz Sürüş Keyfi </span>
+        </div>
+      </div>
+    </nav>
+    <!-- karşılama -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bg.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>BMW hybrid sportscar concept i8</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- card -->
+    <div class="card-group d-flex">
+      <div class="card">
+        <img src="img/bit.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">BMW İ Serisi</h5>
+          <p class="card-text">
+            Konforlu, sportif ve esnek: Yeni BMW İ Serisi, uzun yolculuklar için
+            de mükemmel bir yol arkadaşı.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/iki.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Sportif</h5>
+          <p class="card-text">
+            Dinamizmi her an hissettiren sportif karakteri ve yenilenen estetik
+            iç tasarımıyla yeniden yorumlanan Yeni BMW 5 Serisi, liderlik
+            yolculuğunda ilham vermeye ve sınıfına öncülük etmeye hazır.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/üç.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Doğru Şerit, Doğru Mesafe</h5>
+          <p class="card-text">
+            Profesyonel Sürüş Asistanı otomobilinizi güvenle kendi şeridinde
+            tutar ve maksimum 210 km/sa hıza kadar mesafeyi korur.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- form -->
+    <form class="row g-3">
+      <h3>Detaylı bilgi için formu doldurun, size ulaşalım...</h3>
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">İsim</label>
+        <input
+          type="text"
+          class="form-control"
+          id="validationDefault01"
+          required
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Soyisim</label>
+        <input
+          type="text"
+          class="form-control"
+          id="validationDefault02"
+          required
+        />
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefaultUsername" class="form-label"
+          >Kullanıcı Adı</label
+        >
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+          <input
+            type="text"
+            class="form-control"
+            id="validationDefaultUsername"
+            aria-describedby="inputGroupPrepend2"
+            required
+          />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationDefault03" class="form-label">Şehir</label>
+        <input
+          type="text"
+          class="form-control"
+          id="validationDefault03"
+          required
+        />
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault04" class="form-label">Sokak</label>
+        <select class="form-select" id="validationDefault04" required>
+          <option selected disabled value="">Seçiniz</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="validationDefault05" class="form-label">Posta Kodu</label>
+        <input
+          type="text"
+          class="form-control"
+          id="validationDefault05"
+          required
+        />
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="invalidCheck2"
+            required
+          />
+          <label class="form-check-label" for="invalidCheck2">
+            Şart ve Koşulları Kabul Ediyorum.
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-warning" type="submit">Gönder</button>
+      </div>
+    </form>
+    <!-- detay -->
+    <div class="card text-bg-dark">
+      <img
+        src="https://images.unsplash.com/photo-1557053964-937650b63311?q=80&w=1897&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="card-img"
+        alt="..."
+      />
+      <div class="card-img-overlay">
+        <h5 class="card-title">AYIN ÖZEL TEKLİFİ</h5>
+        <p class="card-text">
+          BMW modellerinde çok özel teklifler ve finansman koşulları
+        </p>
+        <button type="button" class="btn btn-light">İnceleyin</button>
+      </div>
+    </div>
+    <!-- keşfet -->
+    <div class=" mb-3" style="">
+      <div class="row g-0">
+        <div class="col-md-4 img1">
+          <img src="https://bmw.scene7.com/is/image/BMW/header-desktop-v5:16to9?fmt=webp&wid=2560&hei=1440" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="cdt card-title">BMW DÜNYASI TEK UYGULAMADA.</h5>
+            <p class=" ctx card-text">BMW Türkiye mobil uygulamasını mobil cihazlarınıza indirip hemen kullanmaya başlayabilirsiniz.</p>
+            <button type="button" id="btn-1" class="btn btn-light">Keşfedin</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="foot">
+        <p>İLETİŞİM & DESTEK</p>
+        <ul>
+          <li>BMW Canlı Destek</li>
+          <li>BMW Acil Yol Yardım Hattı</li>
+          <li>Geri Dönüşüm</li>
+          <li>Gönüllü Geri Çağırma</li>
+          <li>BMW E-Bülteni</li>
+        </ul>
+      </div>
+      <div class="foot">
+        <p>HIZLI ERİŞİM</p>
+        <ul>
+          <li>Fiyat Listesi</li>
+          <li>BMW Türkiye Mobil Uygulaması</li>
+          <li>Test Sürüşü</li>
+          <li>Ayın Özel Teklifleri</li>
+          <li>Kataloglar</li>
+        </ul>
+      </div>
+      <div class="foot">
+        <p>BMW DÜNYASI</p>
+        <ul>
+          <li>BMW Türkiye Mobil Uygulaması</li>
+          <li>BMW’ni Bul’da Tasarlayın ve Rezerve Edin</li>
+          <li>BMW Dilediğiniz Yerde</li>
+          <li>BMW Motorrad Türkiye</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
